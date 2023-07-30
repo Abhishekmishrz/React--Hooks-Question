@@ -7,7 +7,7 @@
    more concise and easier to understand.
 
 2. **Explain the basic rules of using React hooks.**
-   . The basic rules for using React hooks are:
+   - The basic rules for using React hooks are:
    - Hooks can only be used at the top level of functional components or other custom hooks (not inside loops, conditions, or nested functions).
    - Hooks should not be called conditionally. They should always be called in the same order on every render.
    - Custom hooks should start with the word "use" to indicate that they follow the rules of hooks.
