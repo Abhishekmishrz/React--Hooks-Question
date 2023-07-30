@@ -40,6 +40,7 @@
       - Allows components to consume context from a context provider.
       - React Context is a way to manage state globally.
       - `useContext` is a React Hook that lets you read and subscribe to context from your component.
+      - `useContext` is used for Passing data deeply into the tree and Updating data passed via context.
         
            ```jsx
             const value = useContext(SomeContext)
@@ -47,10 +48,55 @@
    4. **`useReducer`:**
       
       - Alternative to `useState` for managing complex state logic.
+      - `useReducer` is a React Hook that lets you add a reducer to your component.
+      - The `useReducer` Hook is similar to the useState Hook.
+        
+        ```jsx
+            const [state, dispatch] = useReducer(reducer, initialArg, init?)
+           ```
    5. **`useCallback`**
+      
+      - The React `useCallback` Hook returns a memoized callback function.
+      - `useCallback` is a React Hook that lets you cache a function definition between re-renders.
+      - Performance optimization hooks for avoiding unnecessary re-renders.
+      - It is used for:
+      
+           - Skipping re-rendering of components.
+           - Updating state from a memoized callback.
+             
+         ```jsx
+                 const cachedFn = useCallback(fn, dependencies)
+         ```
+      
    6. **`useMemo`:**
    
+   
+      - The React `useMemo` Hook returns a memoized value.
       - Performance optimization hooks for avoiding unnecessary re-renders.
+      - `useMemo` is a React Hook that lets you cache the result of a calculation between re-renders.
+      - It is used for:
+        
+         - Skipping re-rendering of components
+         - Memoizing a dependency of another Hook.
+
+        ```jsx
+                 const cachedFn = useCallback(fn, dependencies)
+        ```
+    7. **`useRef`:**
+
+       - The `useRef` Hook allows you to persist values between renders.
+       - It can be used to store a mutable value that does not cause a re-render when updated.
+       - It can be used to access a DOM element directly.
+       - `useRef` is a React Hook that lets you reference a value that’s not needed for rendering.
+       - It is used for:
+        
+         - Referencing a value with a ref .
+         - Manipulating the DOM with a ref.
+
+        
+         ```jsx
+           const ref = useRef(initialValue)
+         ```
 
 7. **How do you create custom hooks in React? Provide an example of a custom hook and explain its purpose.**
 
