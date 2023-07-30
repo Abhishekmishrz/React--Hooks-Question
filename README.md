@@ -18,13 +18,41 @@
    - Custom hooks should start with the word "use" to indicate that they follow the rules of hooks.
 
 5. **What are the built-in hooks provided by React? Describe each of them and their use cases.**
-   - `useState`: Allows functional components to have state variables.
-   - `useEffect`: Performs side effects in functional components (equivalent to lifecycle methods like `componentDidMount` and `componentDidUpdate`).
-   - `useContext`: Allows components to consume context from a context provider.
-   - `useReducer`: Alternative to `useState` for managing complex state logic.
-   - `useCallback` and `useMemo`: Performance optimization hooks for avoiding unnecessary re-renders.
 
-6. **How do you create custom hooks in React? Provide an example of a custom hook and explain its purpose.**
+   1. **`useState`:**
+   
+      - Allows functional components to have state variables.
+      - The React `useState` Hook allows us to track state in a function component.
+           ```jsx
+           const [state, setState] = useState(initialState);
+           ```
+    
+   2. **`useEffect`:**
+  
+            
+      - Performs side effects in functional components (equivalent to lifecycle methods like `componentDidMount` and `componentDidUpdate`).
+
+           ```jsx
+           useEffect(setup, dependencies?)
+           ```
+   3. **`useContext`:**
+      
+      - Allows components to consume context from a context provider.
+      - React Context is a way to manage state globally.
+      - `useContext` is a React Hook that lets you read and subscribe to context from your component.
+        
+           ```jsx
+            const value = useContext(SomeContext)
+           ```
+   4. **`useReducer`:**
+      
+      - Alternative to `useState` for managing complex state logic.
+   5. **`useCallback`**
+   6. **`useMemo`:**
+   
+      - Performance optimization hooks for avoiding unnecessary re-renders.
+
+7. **How do you create custom hooks in React? Provide an example of a custom hook and explain its purpose.**
 
 
    Custom hooks are regular JavaScript functions that start with the word "use" and may call other hooks. They allow you to encapsulate reusable logic. Here's an 
