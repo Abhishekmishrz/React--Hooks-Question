@@ -2,7 +2,9 @@
 # React hooks interview questions:
 
 1. **What are React hooks? How do they differ from class components?**
-   React hooks are functions that allow functional components to use state and lifecycle features previously only available to class components. They were introduced in React 16.8. With hooks, you can add state and lifecycle methods to functional components without using classes. This makes functional components more concise and easier to understand.
+  - React hooks are functions that allow functional components to use state and lifecycle features previously only available to class components. They were 
+   introduced in React 16.8. With hooks, you can add state and lifecycle methods to functional components without using classes. This makes functional components 
+   more concise and easier to understand.
 
 2. **Explain the basic rules of using React hooks.**
    The basic rules for using React hooks are:
