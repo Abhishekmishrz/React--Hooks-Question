@@ -80,7 +80,7 @@
          - Memoizing a dependency of another Hook.
 
         ```jsx
-                 const cachedFn = useCallback(fn, dependencies)
+                 const cachedValue = useMemo(calculateValue, dependencies)
         ```
     7. **`useRef`:**
 
